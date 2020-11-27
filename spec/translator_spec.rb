@@ -5,6 +5,8 @@ let(:emoticon_symbols) { [:angel, :angry, :bored, :confused, :embarrassed, :fish
   it "accepts one argument, the file path" do
     expect { load_library("./lib/emoticons.yml") }.to_not raise_error
   end
+  
+  binding.pry 
 
   context "return value" do
 
