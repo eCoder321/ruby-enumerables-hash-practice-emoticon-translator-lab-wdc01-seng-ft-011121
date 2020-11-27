@@ -14,6 +14,7 @@ def load_library(file_path)
   emoticons
 end
 
+<<<<<<< HEAD
 def get_japanese_emoticon(file_path, icon)
   emoticons = load_library(file_path)
   emoticons.each {
@@ -28,6 +29,13 @@ def get_japanese_emoticon(file_path, icon)
 end
 
 
+=======
+def get_japanese_emoticon()
+  # code goes here
+  
+end
+
+>>>>>>> 05c0b8ec2ee14ad9cc0feaa66b684c3d5a3ca771
 def get_english_meaning(file_path, icon)
   emoticons = load_library(file_path)
   emoticons.each {
@@ -36,6 +44,7 @@ def get_english_meaning(file_path, icon)
       |o,i|
       i == icon
     }
+<<<<<<< HEAD
     return a if yrt[:japanese] == icon
   }
   "Sorry, that emoticon was not found"
@@ -43,3 +52,11 @@ end
 
 #load_library
 #get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
+=======
+    return a if yrt[o] == :japanese
+  }
+end
+
+#load_library
+get_english_meaning()
+>>>>>>> 05c0b8ec2ee14ad9cc0feaa66b684c3d5a3ca771
